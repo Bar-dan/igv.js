@@ -330,6 +330,10 @@ var igv = (function (igv) {
             {name: "# downsampled:", value: this.counts}]
     }
 
+    DownsampledInterval.prototype.isPaired = function() {
+        return false;
+    }
+
     function PairedEndStats(lowerPercentile, upperPercentile) {
         this.totalCount = 0;
         this.frCount = 0;

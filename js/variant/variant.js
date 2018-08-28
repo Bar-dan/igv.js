@@ -267,7 +267,7 @@ var igv = (function (igv) {
         if (this.referenceBases.length === 1 && !isRef(this.alternateBases)) {
             let ref = this.referenceBases;
             let altArray = this.alternateBases.split(",");
-            fiels.push("<hr/>");
+            fields.push("<hr/>");
             for (let i = 0; i < altArray.length; i++) {
                 let alt = this.alternateBases[i];
                 if (alt.length === 1) {
